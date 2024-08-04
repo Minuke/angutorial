@@ -1,0 +1,13 @@
+@import '@styles';
+
+:host {
+	margin: 20px;
+}
+
+.row {
+	gap: 20px 0;
+}
+
+.col {
+	color: $white;
+}
