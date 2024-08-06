@@ -1,6 +1,11 @@
 <div class="card">
 	<div class="card-header" [ngStyle]="{'background-color': cardColor}">
-		Quote
+		<div class="title">Quote</div>
+		<div>
+			@for (badge of badges(); track badge) {
+				<span class="badge rounded-pill">{{badge}}</span>
+		}
+		</div>
 	</div>
 	<div class="card-body">
 		<blockquote class="blockquote mb-0">

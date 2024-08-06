@@ -12,6 +12,7 @@ import { Colour } from '@core/models/enums/colour.enum';
 export class CardComponent {
 
     public color  =  input.required<string>();
+    public badges  =  input.required<string[]>();
 
     get cardColor(): string {
       switch (this.color()) {

@@ -12,3 +12,31 @@
 .blockquote {
 	font-size: size(14);
 }
+
+.badge:not(:last-child) {
+	position: relative;
+	margin-right: size(5);
+}
+
+.title {
+	padding-right: size(10);
+}
+
+.badge {
+	font-size: size(8);
+  background-color: #F0F0F0; /* O #F0F0F0 */
+  color: #000000; /* O #333333 */
+}
+
+@media (min-width: 576px) {
+	.card-header {
+		font-size: size(16);
+		font-weight: bold;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.badge {
+		font-size: size(10);
+	}
+}
